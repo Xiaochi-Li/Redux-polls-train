@@ -4,6 +4,7 @@ import { handleInitialData } from '../actions/shared'
 import LoadingBar from 'react-redux-loading'
 import Leaderboard from './Leaderboard'
 import Dashboard from './Dashboard'
+import Poll from './Poll'
 import AddPoll from './AddPoll'
 
 
@@ -15,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <LoadingBar/>
-        {this.props.loading ? null : <AddPoll />}
+        {this.props.loading ? null : <Poll match={{params: {id: 'loxhs1bqm25b708cmbf3g'}}}/>}
       </div>
     )
   }
